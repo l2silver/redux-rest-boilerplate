@@ -1,6 +1,7 @@
 import chai from 'chai';
 import chaiImmutable from 'chai-immutable';
 import chaiAsPromised from 'chai-as-promised';
+import jsdom from 'jsdom';
 
 const doc = jsdom.jsdom('<!doctype html><html><body></body></html>');
 const win = doc.defaultView;
