@@ -21,6 +21,7 @@ class Counter extends Component {
   render() {
     return (
       <h1 style={{ color: this.props.color }}>
+        <p>Hello2</p>
         Counter ({this.props.increment}): {this.state.counter}
       </h1>
     );
@@ -31,7 +32,7 @@ export class App extends Component {
   render() {
     return (
       <div className="row">
-        <div className="col-sm-offset-6 col-sm-6">
+        <div className="col-sm-offset-0 col-sm-6">
           <Counter increment={1} color={NICE} />
           <Counter increment={5} color={SUPER_NICE} />
         </div>
